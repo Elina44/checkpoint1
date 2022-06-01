@@ -18,8 +18,26 @@ secondAvatar.addEventListener(`click`, function(){
 //const user = prompt("What's your name ?");
 
 
-const divBtn = document.querySelector(`.description`);
+//Création du bouton
 const btn = document.createElement("button");
+//Mise du texte dans le bouton
 const text = document.createTextNode("Modifier le prémon");
+//Je mets le texte dans le boutton
 btn.appendChild(text);
-document.divBtn.appendChild(btn);
+//Je créé une class au bouton
+btn.classList.add("classbtn");
+//Je sélectionne la div existante où je veux le placer
+const divBtn = document.querySelector(`.description`);
+//Je mets le bouton dans la div 
+divBtn.appendChild(btn);
+
+//J'appelle le bouton pour lui mettre des propriétés :
+const newBtn = document.querySelector(".classbtn");
+newBtn.style.color = "white";//couleur du texte
+newBtn.style.backgroundColor = "pink"; //couleur de fond
+
+//J'appelle le btn pour Q qd je clique dessus, un prompt s'ouvre :
+btn.addEventListener(`click`, function (){
+    const window = prompt("What's your name ?");
+    return window;
+})

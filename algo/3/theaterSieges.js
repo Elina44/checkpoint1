@@ -16,11 +16,11 @@ exemple :
   ['26-1', '26-2', '26-3', ..., '26-100']
 ] 
 */
-const sieges = [
+/*const sieges = [
   {numberColonne: <27}, 
   {numberRang: <101}  
   ]
-
+*/
 function theaterSieges(sieges) {
   // Your code here !
   const colonne = colonneSiege;
@@ -28,13 +28,13 @@ function theaterSieges(sieges) {
   const rang = rangSiege;
 
   const theaterSiege = {};
-  if (let i = 0; i < sieges.length; i++){
-    for (let j = 0; j < sieges[i].length; j++){
+  if ( let i = 0; i < 100; i++){
+    for (let j = 0; j < 26[i].length; j++){
       console.log(sieges[i][j]);
     }
   }
 }
 
-console.log(theaterSieges());
+//console.log(theaterSieges());
 
 module.exports = theaterSieges;
