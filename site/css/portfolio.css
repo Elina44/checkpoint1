@@ -1,3 +1,20 @@
+/*Pour créer l'avatar et le texte de présentation*/
+.banniere {
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+}
+
+.banniere h1 {
+  margin-bottom: 0;
+  font-size: 45px;
+}
+
+.imgavatar {
+  width: 20%;
+  height: 15vh;
+}
+
 .pink-bg {
   background-color: pink;
 }
@@ -31,6 +48,7 @@
   margin-top: -30px;
   border-radius: 12px;
   padding: 0 10%;
+  display: flex;
 }
 
 .column {
@@ -79,4 +97,29 @@ img {
 p {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+/*pour que la barre de navigation change au delà de 700px*/
+@media screen and (min-width: 700px) {
+  .navbar {
+ display: flex;
+ justify-content: space-between;
+ }
+ .banniere {
+  align-items: center;
+ }
+}
+
+@media screen and (max-width: 700px) {
+  .imgavatar {
+    display: none;
+  }
+  /*je rajoute cette mise en forme pour que h1 et p soit alignés*/
+  p {
+    padding: 0;
+  }
+  .skills {
+    display: flex;
+    flex-direction: row;
+  }
 }
