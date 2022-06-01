@@ -16,9 +16,23 @@ exemple :
   ['26-1', '26-2', '26-3', ..., '26-100']
 ] 
 */
+const sieges = [
+  {numberColonne: <27}, 
+  {numberRang: <101}  
+  ]
 
-function theaterSieges() {
+function theaterSieges(sieges) {
   // Your code here !
+  const colonne = colonneSiege;
+  maximun = colonne
+  const rang = rangSiege;
+
+  const theaterSiege = {};
+  if (let i = 0; i < sieges.length; i++){
+    for (let j = 0; j < sieges[i].length; j++){
+      console.log(sieges[i][j]);
+    }
+  }
 }
 
 console.log(theaterSieges());
