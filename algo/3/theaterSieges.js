@@ -16,19 +16,30 @@ exemple :
   ['26-1', '26-2', '26-3', ..., '26-100']
 ] 
 */
+//Je créé mes 2 tableaux:
+const siege = [ [numberColumn], [numberRang] ];
+
+function theaterSieges(siege){
+  for ( let i = 0; i < i; i++){
+    for (let j = 0; j < [i].length; j++){
+      console.log(siege[i][j]);
+    }
+  }
+}
+
 /*const sieges = [
   {numberColonne: <27}, 
   {numberRang: <101}  
   ]
 */
-function theaterSieges(sieges) {
+/*function theaterSieges(sieges) {
   // Your code here !
   const colonne = colonneSiege;
   maximun = colonne
   const rang = rangSiege;
 
   const theaterSiege = {};
-  if ( let i = 0; i < 100; i++){
+  for ( let i = 0; i < 100; i++){
     for (let j = 0; j < 26[i].length; j++){
       console.log(sieges[i][j]);
     }
@@ -36,5 +47,5 @@ function theaterSieges(sieges) {
 }
 
 //console.log(theaterSieges());
-
+*/
 module.exports = theaterSieges;
