@@ -19,3 +19,35 @@ function getPoints(array) {
 }
 
 module.exports = getPoints;
+//Solution :
+function getPoints(array) {
+  let point = 0;
+  array.forEach(result => {
+    const score = result.split(":");
+    for (let i = 0; i < score.lenght; i++) {
+      if(score[i] > score[i+1]){
+        point +=3;
+      }else if (score[i] == score[i+1]){
+        point +=1;
+      } else {
+        point +=0;
+      }
+    }
+  })
+  return point;
+}
+
+//Autre solution :
+
+function getPoints(array) {
+  let sum = 0;
+  for (let i = 0; i < array.length; i++){
+    const chars = array[i].split("");
+    if (chars[0] > chars[2]) {
+      sum = sum + 3;
+    } else if (chars[0] == chars[2]) {
+      sum = sum + 1;
+    }
+  }
+  return sum;
+}

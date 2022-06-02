@@ -25,20 +25,25 @@ const persons = [
   { name: 'Penelope Cruz', age: 47, sex: 'female' },
 ];
 
-function findAdults(arr) {
-  // Your code here !
-  const femmes = persons.filter((femme) => femme.sex === `female` && femme.age >= 18);
+
+const femmes = persons.filter((femme) => femme.sex === `female` && femme.age >= 18);
 //console.log(femmes);
 const hommes = persons.filter((homme) => homme.sex === `male` && homme.age >= 18);
 //console.log(hommes);
-}
+
+function findAdults(arr) {
+  // Your code here !
+  const arr = 
 console.log(findAdults);
 
-/*const femmes = persons.filter((femme) => femme.sex === `female` && femme.age >= 18);
-console.log(femmes);
-const hommes = persons.filter((homme) => homme.sex === `male` && homme.age >= 18);
-console.log(hommes);
-*/
+//Solution
+function findAdults(arr) {
+  let result = []
+  const adFemale = arr.filter(element => (element.sex == "female" && element.age >17));
+  const adMale = arr.filter(element => (element.sex == "male" && element.age >17));
+  result.push(adFemale, adMale);
+  return result;
+}
 
 
 module.exports = findAdults;

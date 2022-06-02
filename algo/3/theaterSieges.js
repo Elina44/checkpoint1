@@ -27,6 +27,44 @@ function theaterSieges(siege){
   }
 }
 
+//Correction:
+function theaterSieges(){
+  let colonne = Array(26);
+  let siege = Array(100);
+  for(let i = 0; i < 26; i++){
+    colonne[i] = Array(26);
+    for(let j = 0; j < 100; j++){
+      siege[j] = Array(100)
+      colonne[i][j] = (i + 1) + "-" +(j + 1)
+    }
+  }
+  return colonne
+}
+
+//Autre solution :
+function theaterSieges() {
+  colonnes = [1,2,26];
+  rangeeSieges = [1,100];
+  for (let i = 0; i < colonnes.length; i++) {
+    for (let j = 0; j < rangeeSieges.length; j++);
+    return colonne[i]+ "-"+rangeeSieges[j];
+  }
+}
+//Solution Amina :
+
+function theaterSieges() {
+  const arrayTheatre = [];//on crée un 1er tableau pour les colonnes
+  for (let i = 1; i < 27; i++){//on met i = 1 pour commencer à compter à 1 et pas zéro; conséquence on va jsq 27
+    const newArray = [];//on créé le 2è tableau
+    for (let j = 1; j < 101; j++) {
+      newArray.push(i + "-" + j);
+    }
+    arrayTheatre.push(newArray);
+  }
+  return arrayTheatre;
+}
+
+
 /*const sieges = [
   {numberColonne: <27}, 
   {numberRang: <101}  

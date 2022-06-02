@@ -14,6 +14,11 @@ function thirdAngle(a, b) {
   return result;
 }
 
-//console.log(thirdAngle(90, 30));
+//ou :
+//on retrourne directement la réponse : de 180 on enlève la somme des 2 angles
+function thirdAngle(a, b) {
+  return 180 - (a + b)
+}
+console.log(thirdAngle(90, 30));
 
 module.exports = thirdAngle;

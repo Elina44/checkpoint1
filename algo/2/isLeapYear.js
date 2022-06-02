@@ -15,12 +15,22 @@ function isLeapYear(year) {
   // TODO: Your code here
   if (year == 1900){
     return false;
-    } if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0) && ((year == 2004) || (year == 2016) || (year == 2020))){
+    } if (((year % 4 == 0) && (year % 100 != 0)) || ((year % 400 == 0) && ((year == 2004)) || (year == 2016) || (year == 2020))){
       return true;
     } else {
     return false;
   }
 };
+//Pour vérifier, on fait ce console.log en mettant le paramètre entre crochet :
+console.log(isLeapYear(1900));
 
+//On peut aussi faire :
+function isLeapYear(year) {
+  if ((year % 4 === 0) && (year % 100 !=0) || (year % 400 == 0)){
+    return true;
+  } else {
+    return false;
+  }
+}
 
 module.exports = isLeapYear;
