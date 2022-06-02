@@ -37,7 +37,14 @@ newBtn.style.color = "white";//couleur du texte
 newBtn.style.backgroundColor = "pink"; //couleur de fond
 
 //J'appelle le btn pour Q qd je clique dessus, un prompt s'ouvre :
-btn.addEventListener(`click`, function (){
-    const window = prompt("What's your name ?");
-    return window;
-})
+//Ce qui va être écrit dans remplacer Matt qui est en id name en HTML =>donc je le sélectionne
+const remplace = document.querySelector("#name");
+const newName = prompt("What's your name ?");
+
+btn.addEventListener(`click`, function () {
+    
+    window.innerHTML = " ";
+    
+});
+
+
